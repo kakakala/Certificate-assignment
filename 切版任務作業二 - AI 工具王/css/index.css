@@ -1,0 +1,764 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+body{
+	font-family: "Noto Sans TC" , sans-serif;
+	margin: 0 auto;
+	background-color: #000;
+}
+
+.container{
+	max-width: 1320px;
+	color: #fff;
+	margin: 0 auto;
+	padding: 0 12px;
+}
+
+.font-s{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 150%;
+}
+
+.font-m{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+}
+
+.font-l{
+	font-style: normal;
+	font-weight: 900;
+	font-size: 20px;
+	line-height: 120%;
+}
+
+.font-xl{
+	font-style: normal;
+	font-weight: 900;
+	font-size: 32px;
+	line-height: 120%;
+}
+
+.font-xxl{
+	font-style: normal;
+	font-weight: 900;
+	font-size: 48px;
+	line-height: 120%;
+}
+
+.font-xxxl{
+	font-style: normal;
+	font-weight: 900;
+	font-size: 88px;
+	line-height: 120%;
+}
+
+.font-xxxxl{
+	font-style: normal;
+	font-weight: 900;
+	font-size: 120px;
+	line-height: 120%;
+}
+
+.font-bold{
+	font-weight: 700;
+}
+
+a{
+	color: #fff;
+	text-decoration: none;
+}
+
+header{
+	margin-bottom: 160px;
+}
+
+.header-navbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+	border-bottom: 1px solid white;
+	margin-bottom: 40px;
+}
+
+.header-navbar-menu{
+	padding: 8px 0;
+}
+
+.header-navbar-menu-show{
+	display: none;
+}
+
+.header-navbar-menu ul{
+	display: flex;	
+}
+
+.header-navbar-menu li{
+	padding-left: 20px;
+}
+
+.banner-btn{
+	display: inline-block;
+	padding: 20px 40px;
+	border: 1px solid #fff;
+	border-radius: 16px;
+	height: 64px;
+}
+
+.banner-kusa{
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 204px;
+}
+
+/* .content{
+} */
+
+.service-top{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 80px;
+}
+
+.service .card-group{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 160px;
+}
+
+.service .card{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 80px 40px;
+	border: 1px solid #525252;
+	border-radius: 16px;
+	gap: 20px;
+	max-width: 416px;
+}
+
+/* .content-btm-title{
+	 margin-bottom: 80px;
+	 為何這段語法沒有作用? 
+} */
+
+.content-logo-group{
+	margin-top: 80px;
+	margin-bottom: 160px;
+}
+
+.content-logo-group img{
+	width: 160px;
+	height: 40px;
+	padding-left: 20px;
+}
+
+.logo{
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.logo::before,.logo::after{
+	content: "";
+	position: sticky;
+	width: 196px;
+	height: 40px;
+	top: 0;
+}
+
+.logo::before{
+	left: 0;
+	padding-right: 196px;
+	background: linear-gradient(
+	90deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0.991615) 11.79%,
+    rgba(0, 0, 0, 0.967585) 21.38%,
+    rgba(0, 0, 0, 0.9296) 29.12%,
+    rgba(0, 0, 0, 0.879348) 35.34%,
+    rgba(0, 0, 0, 0.818519) 40.37%,
+    rgba(0, 0, 0, 0.7488) 44.56%,
+    rgba(0, 0, 0, 0.671881) 48.24%,
+    rgba(0, 0, 0, 0.589452) 51.76%,
+    rgba(0, 0, 0, 0.5032) 55.44%,
+    rgba(0, 0, 0, 0.414815) 59.63%,
+    rgba(0, 0, 0, 0.325985) 64.66%,
+    rgba(0, 0, 0, 0.2384) 70.88%,
+    rgba(0, 0, 0, 0.153748) 78.62%,
+    rgba(0, 0, 0, 0.0737185) 88.21%,
+    rgba(0, 0, 0, 0) 100%
+	);
+}
+
+.logo::after{
+	right: 0;
+	padding-left: 196px;
+	background: linear-gradient(
+	90deg,
+	#000000 0%,
+	rgba(0, 0, 0, 0.991615) 11.79%,
+	rgba(0, 0, 0, 0.967585) 21.38%,
+	rgba(0, 0, 0, 0.9296) 29.12%,
+	rgba(0, 0, 0, 0.879348) 35.34%,
+	rgba(0, 0, 0, 0.818519) 40.37%,
+	rgba(0, 0, 0, 0.7488) 44.56%,
+	rgba(0, 0, 0, 0.671881) 48.24%,
+	rgba(0, 0, 0, 0.589452) 51.76%,
+	rgba(0, 0, 0, 0.5032) 55.44%,
+	rgba(0, 0, 0, 0.414815) 59.63%,
+	rgba(0, 0, 0, 0.325985) 64.66%,
+	rgba(0, 0, 0, 0.2384) 70.88%,
+	rgba(0, 0, 0, 0.153748) 78.62%,
+	rgba(0, 0, 0, 0.0737185) 88.21%,
+	rgba(0, 0, 0, 0) 100%
+	);
+	transform: rotate(-180deg);
+}
+
+.logo li:not(:last-child){
+	margin-right: 20px;	
+}
+
+.cooperate-card-group{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 160px;
+}
+
+.cooperate-card-group .card{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 40px;
+	gap: 20px;
+	max-width: 416px;
+	background-color: rgba(255, 255, 255, 0.08);
+	box-shadow: 0px 100px 80px rgba(18, 18, 18, 0.07), 0px 41.7776px 33.4221px rgba(18, 18, 18, 0.0503198), 0px 22.3363px 17.869px rgba(18, 18, 18, 0.0417275), 0px 12.5216px 10.0172px rgba(18, 18, 18, 0.035), 0px 6.6501px 5.32008px rgba(18, 18, 18, 0.0282725), 0px 2.76726px 2.21381px rgba(18, 18, 18, 0.0196802);
+	border-radius: 16px;
+}
+
+.cooperate-card-group .card-content{
+	padding-bottom: 120px;
+}
+
+.cooperate-card-group .card-footer{
+	display: flex;
+}
+
+.card-name-na-co{
+	display: flex;
+	flex-direction: column;
+	margin-left: 16px;
+}
+
+.white-ball{
+	display: none;
+}
+.gray-ball{
+	display: none;
+}
+.content2{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 80px 0px;
+	gap: 40px;
+	border-radius: 16px;
+	background-color: #fff;
+	color: #000;
+}
+
+.content2-search{
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	position: relative;
+}
+
+.search{
+	padding: 20px 40px;
+	width: 100%;
+	background-color: #f2f2f2;
+	border-radius: 16px;
+	border: 1px solid transparent;
+}
+
+.search::before{
+	content: " ";
+	background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/icons/search.png);
+	background-repeat: no-repeat;
+	background-size: 24px;
+	position: absolute;
+	left: 40px;
+}
+
+.content2-navbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.content2 .navbar1{
+	display: flex;
+	align-items: center;
+	padding: 20px 32px 20px 40px;
+	gap: 12px;
+	border: 1px solid #f2f2f2;
+	border-radius: 16px;
+}
+
+.content2 .navbar2{
+	display: flex;
+	align-items: flex-start;
+	gap: 8px;
+}
+
+.content2 .navbar2 .type-all{
+	padding: 8px 16px;
+	background-color: #f2f2f2;
+	border: 1px solid transparent;
+	border-radius: 16px;
+}
+
+.content2 .navbar2 .type{
+	padding: 8px 16px;
+	color: #919191;
+	text-align: center;
+}
+
+.content2 .navbar3{
+	display: flex;
+	align-items: center;
+	padding: 20px 32px 20px 40px;
+	gap: 12px;
+	border: 1px solid #f2f2f2;
+	border-radius: 16px;
+}
+
+.content2-card-group{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 24px;
+	width: 100%;
+}
+
+.content2 .card{
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #f2f2f2;
+	border-radius: 16px;
+	max-width: 416px;
+	overflow: hidden;
+}
+
+.img-zoom{
+	overflow: hidden;
+}
+
+.card:hover .img-zoom img{
+	transform: scale(1.2);
+	transition: transform 0.3s;
+}
+
+.content2 .card-body{
+	padding: 20px 32px;
+	border-bottom: 1px solid #f2f2f2;
+}
+
+.card-title{
+	margin-bottom: 12px;
+}
+
+.flex-grow{
+	flex-grow: 1;
+}
+
+.content2 .card-footer1{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 32px;
+	border-bottom: 1px solid #f2f2f2;
+}
+
+.content2 .card-footer2{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 32px;
+}
+
+.content2-pagination{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 4px;
+}
+
+.content2 .active{
+	padding: 21px 24px;
+	color: #fff;
+	background-color: #000;
+	border-radius: 16px;
+}
+
+.content2 .num{
+	padding: 21px 24px;
+	border-radius: 16px;
+}
+
+.content3{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 80px 0px;
+	gap: 40px;
+	margin-top: 78px;
+	margin-bottom: 80px;
+}
+
+.content3-btn{
+	display: flex;
+	align-items: center;
+	padding: 20px 32px 20px 40px;
+	gap: 12px;
+	color: #fff;
+	text-decoration: none;
+	border: 1px solid #fff;
+	border-radius: 16px;
+}
+
+
+
+.footer-top{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 80px 0px;
+	gap: 226px;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.footer-top-btn-group li{
+	margin-bottom: 8px;
+}
+
+.footer-btm{
+	display: flex;
+	align-items: center;
+	padding: 20px 0px;
+	gap: 20px;
+}
+
+.footer-btm-copyright{
+	margin-right: 80px;
+}
+
+.footer-btm-link{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-back{
+	display: flex;
+	align-items: center;
+	padding: 12px 0px;
+	gap: 12px;
+	margin-left: 683px;
+}
+
+footer a{
+	text-decoration: none;
+}
+
+footer a:visited{
+	color: #fff;
+	text-decoration: none;
+}
+
+@media (max-width: 375px) {
+	.mb-font-s{
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 150%;
+	}
+	
+	.mb-font-m{
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 150%;
+	}
+	
+	.mb-font-l{
+		font-style: normal;
+		font-weight: 900;
+		font-size: 20px;
+		line-height: 120%;
+	}
+	
+	.mb-font-xl{
+		font-style: normal;
+		font-weight: 900;
+		font-size: 32px;
+		line-height: 120%;
+	}
+	.mb-font-xxl{
+		font-style: normal;
+		font-weight: 900;
+		font-size: 48px;
+		line-height: 120%;
+	}	
+	header{
+		/* width: 375px; */
+		/* margin: 0 12px; */
+		margin-bottom: 120px;
+	}
+	.logo{
+		overflow-x: auto;
+	}
+	.header-navbar-menu{
+		display: none;
+	}
+	.header-navbar-menu-show{
+		display: block;
+	}
+	.banner-p{
+		width: 252px;
+	}
+	.banner-btm{
+		display: flex;
+		flex-direction: column;
+	}
+	.banner-btn{
+		width: 165px;
+		text-align: center;
+	}
+	.banner-kusa{
+		width: 31%;
+	}
+	.service-top{
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+	}
+	.service .card-group{
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+	}
+	.service .card{
+		width: 351px;
+		height: auto;
+		padding: 40px 20px;
+	}
+	.content-logo-group{
+		margin-top: 24px;
+		margin-bottom: 48px;
+	}
+	.logo{
+		display: flex;
+		margin-bottom: 12px;
+		/* width: 375px; */
+		height: 40px;
+	}
+
+	.cooperate-card-group{
+		width: 351px;
+		/* margin: 0 12px; */
+	}
+	.cooperate-card-group .card{
+		display: none;
+	}
+	.cooperate-card-group .card-first{
+		display: block;
+		width: 351px;
+		gap: 20px;
+		border-radius: 16px;
+	}
+	.page-ball{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 8px;
+		margin-top: 24px;
+		margin-bottom: 120px;
+	}
+	.white-ball{
+		display: block;
+		width: 12px;
+		height: 12px;
+		border-radius: 50%;
+		background-color: #fff;
+	}
+	.gray-ball{
+		display: block;
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background-color: #525252;
+	}
+	.content2{
+		padding: 80px 12px;
+		border-radius: 20px;
+		gap: 16px;
+	}
+	.content2-title{
+		text-align: center;
+		margin-bottom: 16px;
+		/* 為何沒辦法像示範一樣兩行文字等寬? */
+	}
+	.content2-search{
+		margin-bottom: 16px;
+	}
+	.content2-navbar{
+		display: flex;
+		flex-wrap: wrap;
+		gap: 16px;
+		margin-bottom: 16px;
+		flex: 0 0 100%;
+		/* 雖然不知道這段語法的意思是什麼，但只有加上這段才不會讓narbar2和card-croup的上半部重疊在一起 */
+	}
+	.content2-navbar .navbar1{
+		order: 0;
+	}
+	.content2-navbar .navbar3{
+		order: 0;
+	}
+	.content2-navbar .navbar2{
+	    order: 1;
+		overflow-x: auto;	
+    }
+	.navbar2 .type-all{
+		width: 64px;
+		height: 40px;
+	}
+	.navbar2 .type{
+		width: 64px;
+		height: 40px;
+	}
+	.navbar2 span{
+		display: block;
+		flex-wrap: nowrap;
+		width: 64px;
+		height: 40px;
+	}
+	.content2-card-group{
+		display: flex;
+		flex-direction: column;
+		width: 351px;
+		/* margin: 0 12px; */
+		margin-bottom: 16px;
+	}
+	.content2-card-group .card{
+		width: 100%;
+	}
+	/* .content2-page{
+		height: 48px;
+		 大小怎麼調整都歪歪的，而且位子也沒辦法調整好，最右邊的箭頭也不知為何隱形了 
+	} */
+	.content3{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		/* width: 375px; */
+		/* margin: 0 12px; */
+		margin-top: 118px;
+	}
+	.content3-p{
+		width: 224px;
+		/* 如同上面的問題，為何斷句沒辦法像是範例一樣 */
+	}
+	.footer-top{
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+	}
+	.footer-top-btn-group{
+		width: 96px;
+		height: 124px;
+		order: 1;
+	}
+	.footer-btm{
+		display: flex;
+		flex-wrap: wrap;
+		/* width: 375px; */
+		/* margin: 0 12px; */
+		gap: 12px;
+	}
+	.footer-btm-copyright{
+		order: 0;
+	}
+	.footer-back{
+		order: 0;
+		margin-left: 99px;
+	}
+	.footer-btm-link{
+		order: 1;
+	}
+}
